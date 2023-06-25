@@ -1,3 +1,10 @@
+body::before{
+    display: block;
+    content: '';
+    height: 90px;
+}
+
 ion-icon {
     font-size: 64px;
   }
+
