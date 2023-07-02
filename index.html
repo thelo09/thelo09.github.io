@@ -10,10 +10,20 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="./components/css/style.css">
     <title>Networks Lab, IIT Dharwad</title>
+    <script>
+        window.addEventListener("load",()=>{
+            const loader = document.querySelector(".loader");
+            loader.classList.add("loader--hidden");
+            loader.addEventListener("transitionend",()=>{
+                document.body.removeChild(loader);
+            })
+        });
+    </script>
 </head>
 
 <body>
     <!-- Navbar starting -->
+    <div class="loader"></div>
     <nav class="navbar navbar-expand-lg py-3 fixed-top" style="background-color: #bac8ff;">
         <div class="container">
             <a href="index.html" class="navbar-brand">
