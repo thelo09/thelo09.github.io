@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="./components/css/style.css">
+    <link rel="stylesheet" href="./components/css/card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Networks Lab, IIT Dharwad</title>
     <script>
-        window.addEventListener("load",()=>{
+        window.addEventListener("load", () => {
             const loader = document.querySelector(".loader");
             loader.classList.add("loader--hidden");
-            loader.addEventListener("transitionend",()=>{
+            loader.addEventListener("transitionend", () => {
                 document.body.removeChild(loader);
             })
         });
@@ -86,7 +88,7 @@
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
-                    <h1> Unleashing the Future Of <span class="text-warning">Networks</span></h1>
+                    <h1> Unleashing the Future Of <span class="text-warning warning">Networks</span></h1>
                     <!-- <h1 style="color:#e3f2fd;">Networks Lab</h1> -->
                     <div class="p lead my-4 pe-5">Step into the world of cutting-edge technology and innovation at the
                         Networks Lab of the prestigious Indian Institute of Technology, Dharwad. Nestled amidst a
@@ -249,19 +251,28 @@
                     Faculty
                 </h2>
                 <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card bg-light">
-                            <div class="card-body text-center">
-                                <img src="components/images/sir.jpg" class="rounded-circle img-fluid mb-2" alt="">
-                                <h3>Dr.Koteswararao Kondepu</h3>
-                                <p class="card-text ">Email:k.kondepu@iitdh.ac.in</p>
-                                <span class="handels justify-content-between">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="profile-card text-center">
+                            <div class="image">
+                                <img src="components/images/sir.jpg" alt="" class="profile-pic ">
+                            </div>
+                            <div class="data">
+                                <h2>Dr. Koteswararao Kondepu</h2>
+                                <!-- <span>Developer & Designer</span> -->
+                            </div>
+                            <div class="crow">
+                                <div class="info">
+                                    <h3>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </h3>
+                                </div>
+                                <div class="info">
+                                    <h3>
+                                        <a href="https://example.com/your-resume.pdf"><i
+                                                class="fa fa-graduation-cap"></i>
 
-                                    <a href="">
-                                        <i class="bi bi-linkedin text-dark mx-1"></i>
-                                    </a>
-                                </span>
-                                </span>
+                                    </h3>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -275,20 +286,26 @@
                 </h2>
                 <div class="row g-4">
                     <div class="col-md-4 col-lg-3">
-                        <div class="card bg-light" style="height: 450px;">
-                            <div class="card-body text-center">
-                                <img src="components/images/venkatesh.jpg" class="rounded-circle img-fluid mb-2" alt="">
-                                <h3>Venkateshwarlu Gudepu</h3>
-                                <p class="card-text ">2020-Present</p>
-                                <span class="handels justify-content-between">
-                                    <a href="">
-                                        <ion-icon size="large" name="logo-linkedin"></ion-icon>
-                                    </a>
-                                    <a href="">
-                                        <ion-icon size="large" name="school-outline"></ion-icon>
-                                    </a>
-                                </span>
-                                </span>
+                        <div class="profile-card text-center">
+                            <div class="image">
+                                <img src="components/images/venkatesh.jpg" alt="" class="profile-pic ">
+                            </div>
+                            <div class="data">
+                                <h2>Olivia Gomez</h2>
+                                <span>Developer & Designer</span>
+                            </div>
+                            <div class="crow">
+                                <div class="info">
+                                    <h3>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </h3>
+                                </div>
+                                <div class="info">
+                                    <h3>
+                                        <a href="https://example.com/your-resume.pdf"><i
+                                                class="fa fa-file-pdf-o"></i></a>
+                                    </h3>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -302,20 +319,26 @@
                 </h2>
                 <div class="row g-4">
                     <div class="col-md-4 col-lg-3">
-                        <div class="card bg-light" style="height: 450px;">
-                            <div class="card-body text-center">
-                                <img src="components/images/LAVANYA_MALAKALAPALLI.png" class="rounded-circle img-fluid mb-2" alt="">
-                                <h3>Lavanya Malakalapalli</h3>
-                                <p class="card-text ">2023-Present</p>
-                                <span class="handels justify-content-between">
-                                    <a href="https://www.linkedin.com/in/lavanya-malakalapalli-aab9a3196/">
-                                        <ion-icon size="large" name="logo-linkedin"></ion-icon>
-                                    </a>
-                                    <!-- <a href="">
-                                        <ion-icon size="large" name="school-outline"></ion-icon>
-                                    </a> -->
-                                </span>
-                                </span>
+                        <div class="profile-card text-center">
+                            <div class="image">
+                                <img src="components/images/LAVANYA_MALAKALAPALLI.png" alt="" class="profile-pic ">
+                            </div>
+                            <div class="data">
+                                <h2>Lavanya M</h2>
+                                <span>2023-Present</span>
+                            </div>
+                            <div class="crow">
+                                <div class="info">
+                                    <h3>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </h3>
+                                </div>
+                                <div class="info">
+                                    <h3>
+                                        <a href="https://example.com/your-resume.pdf"><i
+                                                class="fa fa-file-pdf-o"></i></a>
+                                    </h3>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -329,48 +352,78 @@
                 </h2>
                 <div class="row my-4 g-4">
                     <div class="col-md-4 col-lg-3">
-                        <div class="card bg-light" style="height: 450px">
-                            <div class="card-body text-center">
-                                <img src="components/images/raja.png" class="rounded-circle img-fluid mb-2" alt="">
-                                <h3>Tella Rajashekhar Reddy</h3>
-                                <p class="card-text ">2020-Present</p>
-                                <span class="handels justify-content-between">
-
-                                    <a href="">
-                                        <ion-icon size="large" name="logo-linkedin"></ion-icon>
-                                    </a>
-                                    <a href="">
-                                        <ion-icon size="large" name="school-outline"></ion-icon>
-                                    </a>
-
-                                </span>
-                                </span>
+                        <div class="profile-card text-center">
+                            <div class="image">
+                                <img src="components/images/raja.png" alt="" class="profile-pic ">
+                            </div>
+                            <div class="data">
+                                <h2>Rajashekhar Reddy </h2>
+                                <span>Developer & Designer</span>
+                            </div>
+                            <div class="crow">
+                                <div class="info">
+                                    <h3>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </h3>
+                                </div>
+                                <div class="info">
+                                    <h3>
+                                        <a href="https://example.com/your-resume.pdf"><i
+                                                class="fa fa-file-pdf-o"></i></a>
+                                    </h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-lg-3">
-                        <div class="card bg-light" style="height: 450px">
-                            <div class="card-body text-center">
-                                <img src="components/images/shubh.jpg" class="rounded-circle img-fluid mb-3" alt="">
-                                <h3>Shubh Agarwal</h3>
-                                <p class="card-text ">2021-Present</p>
-                                <span class="handels justify-content-between">
-
-                                    <a href="">
-                                        <ion-icon size="large" name="logo-linkedin"></ion-icon>
-                                    </a>
-                                    <a href="">
-                                        <ion-icon size="large" name="school-outline"></ion-icon>
-                                    </a>
-                                </span>
-                                </span>
+                        <div class="profile-card text-center">
+                            <div class="image">
+                                <img src="components/images/shubh.jpg" alt="" class="profile-pic">
+                            </div>
+                            <div class="data">
+                                <h2>Shubh Agarwal</h2>
+                                <span>Developer & Designer</span>
+                            </div>
+                            <div class="crow">
+                                <div class="info">
+                                    <h3>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </h3>
+                                </div>
+                                <div class="info">
+                                    <h3>
+                                        <a href="https://example.com/your-resume.pdf"><i
+                                                class="fa fa-file-pdf-o"></i></a>
+                                    </h3>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
+                    <div class="col-md-4 col-lg-3">
+                        <div class="profile-card text-center">
+                            <div class="image">
+                                <img src="components/images/bhargav.jpeg" alt="" class="profile-pic">
+                            </div>
+                            <div class="data">
+                                <h2>C. Bhargav</h2>
+                                <span>Developer & Designer</span>
+                            </div>
+                            <div class="crow">
+                                <div class="info">
+                                    <h3>
+                                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    </h3>
+                                </div>
+                                <div class="info">
+                                    <h3>
+                                        <a href="https://example.com/your-resume.pdf"><i
+                                                class="fa fa-file-pdf-o"></i></a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
     </section>
     <!-- Contact -->
@@ -381,34 +434,34 @@
                     <h2 class="text-center mb-4">
                         Contact Info
                     </h2>
-                        <ul class="list-group list-group-flush lead">
-                            <li class="list-group-item">
-                                <span class="fw-bold">
-                                    Location:
-                                </span>
-                                IIT Dharwad
-                            </li>
-                            <li class="list-group-item">
-                                <span class="fw-bold">
-                                    Location:
-                                </span>
-                                IIT Dharwad
-                            </li>
-                            <li class="list-group-item">
-                                <span class="fw-bold">
-                                    Location:
-                                </span>
-                                IIT Dharwad
-                            </li>
-                            <li class="list-group-item">
-                                <span class="fw-bold">
-                                    Location:
-                                </span>
-                                IIT Dharwad
-                            </li>
-                            
-                        </ul>
-                    
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">
+                                Location:
+                            </span>
+                            IIT Dharwad
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">
+                                Location:
+                            </span>
+                            IIT Dharwad
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">
+                                Location:
+                            </span>
+                            IIT Dharwad
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">
+                                Location:
+                            </span>
+                            IIT Dharwad
+                        </li>
+
+                    </ul>
+
                 </div>
                 <div class="col-md">
                     <div id="map"></div>
@@ -427,7 +480,7 @@
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11',
-            center: [74.9260,15.5188],           
+            center: [74.9260, 15.5188],
             zoom: 16
         });
     </script>
