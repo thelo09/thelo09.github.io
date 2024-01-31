@@ -17,10 +17,18 @@ ion-icon {
 }
 
 .card{
-    padding: 1.5em .5em .5em;
+    padding: 1em .5em .5em;
     text-align: center;
     border-radius: 2em;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.card1{
+    padding: 2.5em .5em .5em;
+    padding-left: 2em;
+    text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 12px 5px 10px rgba(0,0,0,.2);
 }
 
 .card-title{
@@ -71,3 +79,67 @@ ion-icon {
 .warning{
     font-size: 40px;
 }
+
+nav.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 2% 10%; /* Add margin as a percentage of the viewport width */
+}
+
+.button-container button {
+    flex: 1; /* Equal width for each button */
+    margin: 0 1%; /* Add some spacing between buttons as a percentage of the viewport width */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 400px) {
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center buttons horizontally on small screens */
+        margin: 2% 0; /* Adjust margin for small screens */
+    }
+
+    .button-container button {
+        flex: none; /* Disable equal width on small screens */
+        width: 100%; /* Full width for each button on small screens */
+        margin: 1% 0; /* Adjust margin between buttons for small screens */
+    }
+}
+
+
+.feature-icon {
+    color: #e67e22;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: #fdf2e9;
+    margin-bottom: 3.2rem;
+    padding: 1.6rem;
+    border-radius: 50%;
+  }
+  
+  .feature-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+  }
+  
+  .feature-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+
+  .lab-author{
+    color: cornflowerblue;
+    font-size: 16px;
+  }
+
+  .publication-detail{
+    font-size: 16px;
+  }

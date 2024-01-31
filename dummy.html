@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Text from File</title>
+    <link rel="stylesheet" href="./components/css/style.css">
+    <link rel="stylesheet" href="./components/css/card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+</head>
+<body>
+
+<div class="container">
+    <div id="output"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const filePath = 'demo.txt';  // Specify the path to your data.txt file
+
+    fetch(filePath)
+        .then(response => response.text())
+        .then(content => displayContent(content))
+        .catch(error => console.error('Error loading file:', error));
+
+    function displayContent(content) {
+        const outputDiv = document.getElementById('output');
+
+        // Assuming each line in the file represents a separate content
+        const lines = content.split('\n');
+
+        lines.forEach(function (line) {
+            if (line.trim() !== '') {
+                const formattedHTML = `
+                    <div class="row text-center">
+                        <div class="col-md">
+                            <div class="card1 bg-light text-dark py-4">
+                                <div class="card-body-text-center">
+                                    <div class="h5" style="font-weight: bold;">${line.trim()}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                outputDiv.innerHTML += formattedHTML;
+            }
+        });
+    }
+});
+</script>
+
+</body>
+</html>
